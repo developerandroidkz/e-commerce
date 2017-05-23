@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <kz.putandgo.kuanysh.menuexample.MaskedEditText
+        android:id="@+id/tellNumberForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:autoText="false"
+        android:background="@drawable/test"
+        android:ems="10"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHint="?android:attr/colorButtonNormal"
+        android:textColorLink="@color/blue"
+        android:textSize="13dp"
+        custom:mask="+7(7**)***-**-**"
+        android:inputType="phone"
+        custom:placeholder="_"
+        android:layout_marginBottom="105dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <requestFocus />
+    </kz.putandgo.kuanysh.menuexample.MaskedEditText>
+    <Button
+        android:id="@+id/nextbyphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/button"
+        android:text="@string/forgot_next"
+        android:textColorLink="@color/blue"
+        android:textSize="13dp"
+        android:layout_alignTop="@+id/tellNumberForgot"
+        android:layout_alignStart="@+id/tellNumberForgot"
+        android:layout_alignEnd="@+id/tellNumberForgot" />
+</RelativeLayout>

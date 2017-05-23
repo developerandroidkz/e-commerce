@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kz.putandgo.kuanysh.menuexample.DetailActivity"
+    tools:showIn="@layout/content_scrolling"
+    >
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:id="@+id/viewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/viewpager"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/viewPagerCountDots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@color/transpert"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_below="@+id/viewPagerIndicator"
+        android:id="@+id/NikName"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="START | lunch 20.00 | Dinner 60.00 | Travel 60.00 | Doctor 5000.00 | lunch 20.00 | Dinner 60.00 | Travel 60.00 | Doctor 5000.00 | END" />
+    <TextView
+        android:layout_below="@+id/NikName"
+        android:paddingTop="5dp"
+        android:id="@+id/descriptionName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:textSize="18dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:paddingRight="5dip"
+        android:text="Описание:" />
+    <TextView
+        android:layout_below="@+id/descriptionName"
+        android:paddingTop="5dp"
+        android:id="@+id/descriptionOfProduct"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:paddingRight="5dip"
+        android:text="name of product" />
+    <TextView
+        android:layout_below="@+id/descriptionOfProduct"
+        android:paddingTop="5dp"
+        android:id="@+id/nettoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:textSize="18dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:paddingRight="5dip"
+        android:text="Масса нетто: " />
+    <TextView
+
+        android:paddingTop="5dp"
+        android:id="@+id/nettoOfProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:paddingRight="5dip"
+        android:text="Масса нетто:"
+        android:layout_below="@+id/descriptionOfProduct"
+        android:layout_toEndOf="@+id/nettoName" />
+    <TextView
+        android:layout_below="@+id/nettoOfProduct"
+        android:paddingTop="5dp"
+        android:id="@+id/SposobHranenie"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:textSize="18dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:paddingRight="5dip"
+        android:text="Способ хранение:" />
+    <TextView
+        android:layout_below="@+id/SposobHranenie"
+        android:paddingTop="5dp"
+        android:id="@+id/SposobHranenieOfProduct"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:paddingRight="5dip"
+        android:text="name of product" />
+    <TextView
+        android:layout_below="@+id/SposobHranenieOfProduct"
+        android:paddingTop="5dp"
+        android:id="@+id/ManufacturerName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:textSize="18dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:paddingRight="5dip"
+        android:text="Производитель:" />
+    <TextView
+        android:layout_below="@+id/ManufacturerName"
+        android:paddingTop="5dp"
+        android:id="@+id/ManufacturerNameOfProduct"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:paddingRight="5dip"
+        android:text="name of product" />
+</RelativeLayout>

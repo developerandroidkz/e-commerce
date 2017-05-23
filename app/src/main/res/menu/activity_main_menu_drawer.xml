@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/first"
+            android:icon="@drawable/first"
+            android:title="@string/first" />
+        <item
+            android:id="@+id/second"
+            android:icon="@drawable/second"
+            android:title="@string/second" />
+        <item
+            android:id="@+id/third"
+            android:icon="@drawable/third"
+            android:title="@string/thirth" />
+        <item
+            android:id="@+id/fourth"
+            android:icon="@drawable/fourth"
+            android:title="@string/fourth" />
+        <item
+            android:id="@+id/fifth"
+            android:icon="@drawable/fifth"
+            android:title="@string/fifth" />
+        <item
+            android:id="@+id/sixth"
+            android:icon="@drawable/sixth"
+            android:title="@string/sixth" />
+        <item
+            android:id="@+id/seventh"
+            android:icon="@drawable/seventh"
+            android:title="@string/seventh" />
+        <item
+            android:id="@+id/eigth"
+            android:icon="@drawable/eigth"
+            android:title="@string/eigth" />
+        <item
+            android:id="@+id/ninth"
+            android:icon="@drawable/ninth"
+            android:title="@string/ninth" />
+        <item
+            android:id="@+id/tenth"
+            android:icon="@drawable/tenth"
+            android:title="@string/tenth" />
+        <item
+            android:id="@+id/eleventh"
+            android:icon="@drawable/eleventh"
+            android:title="@string/eleventh" />
+        <item
+            android:id="@+id/twelfth"
+            android:icon="@drawable/twelfth"
+            android:title="@string/twelfth" />
+        <item
+            android:id="@+id/thirteenth"
+            android:icon="@drawable/thirteenth"
+            android:title="@string/thirteenth" />
+    </group>
+
+    <item android:title="Личные">
+        <menu>
+            <item
+                android:id="@+id/to_basket"
+                android:icon="@drawable/add"
+                android:title="@string/basket" />
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/settings"
+                android:title="@string/setting" />
+            <item
+            android:id="@+id/history"
+            android:icon="@drawable/list"
+            android:title="@string/history" />
+            <item
+                android:id="@+id/changeMarket"
+                android:icon="@drawable/market"
+                android:title="@string/change_market" />
+            <item
+                android:id="@+id/barcode"
+                android:icon="@drawable/barcode"
+                android:title="@string/barcode" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/reg_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mylogo"
+        android:layout_above="@+id/reg_email"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:id="@+id/reg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="202dp"
+        android:autoText="false"
+        android:background="@drawable/test"
+        android:ems="10"
+        android:hint="@string/reg_name"
+        android:inputType="text"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHint="?android:attr/colorButtonNormal"
+        android:textColorLink="@color/blue"
+        android:textSize="13dp" />
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/reg_name"
+        android:layout_alignStart="@+id/reg_name"
+        android:layout_below="@+id/reg_name"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/test"
+        android:ems="10"
+        android:hint="@string/reg_email"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHint="?android:attr/colorButtonNormal"
+        android:textSize="13dp" />
+    <kz.putandgo.kuanysh.menuexample.MaskedEditText
+        android:id="@+id/reg_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/test"
+        android:ems="10"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHint="?android:attr/colorButtonNormal"
+        android:textColorLink="@color/blue"
+        android:textSize="13dp"
+        app:mask="+7(7**)***-**-**"
+        android:inputType="phone"
+        app:placeholder="_"
+        android:layout_marginTop="14dp"
+        android:layout_alignEnd="@+id/reg_email"
+        android:layout_alignStart="@+id/reg_email"
+        android:layout_below="@+id/reg_email">
+    </kz.putandgo.kuanysh.menuexample.MaskedEditText>
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/reg_number"
+        android:layout_alignStart="@+id/reg_number"
+        android:layout_below="@+id/reg_number"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/test"
+        android:ems="10"
+        android:hint="@string/reg_password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHint="?android:attr/colorButtonNormal"
+        android:textSize="13dp" />
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/reg_button"
+        android:textColorLink="@color/blue"
+        android:textSize="13dp"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_alignEnd="@+id/reg_password" />
+
+    <TextView
+        android:id="@+id/to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="@string/reg_to_login"
+        android:textColor="?android:attr/colorButtonNormal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/reg_password"
+        android:layout_alignStart="@+id/reg_password"
+        android:layout_below="@+id/reg_password"
+        android:text="@string/reg_agree" />
+
+</RelativeLayout>

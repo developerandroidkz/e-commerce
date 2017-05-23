@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="activity_bg">#e4e5e5</color>
+    <color name="transpert">#79000000</color>
+    <color name="orange">@android:color/holo_orange_dark</color>
+    <color name="uspewno">#58c170</color>
+    <color name="neuspewno">#de4947</color>
+    <color name="test">#ff8000</color>
+    <color name="button">#7133c1f9</color>
+    <color name="hint_color">#7fff</color>
+    <color name="white">#62ffffff</color>
+    <color name="blue">@android:color/holo_orange_dark</color>
+    <color name="transpertTextView">#79ffffff</color>
+    <color name="actionbar_opacity">#33000000</color>
+</resources>

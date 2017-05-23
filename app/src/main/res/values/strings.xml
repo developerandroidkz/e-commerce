@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">MenuExample</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="first">Продукты питания</string>
+    <string name="second">Напитки, чай, кофе</string>
+    <string name="thirth">Гигиена и косметика</string>
+    <string name="fourth">Стирка, уборка</string>
+    <string name="fifth">Товары для детей</string>
+    <string name="sixth">Канцтовары</string>
+    <string name="seventh">Дом, интерьер, посуда</string>
+    <string name="eigth">Отдых на природе</string>
+    <string name="ninth">Товары для животных</string>
+    <string name="tenth">Техника и инструменты</string>
+    <string name="eleventh">Одежда</string>
+    <string name="twelfth">Чемоданы</string>
+    <string name="thirteenth">Прочее</string>
+    <string name="basket">Корзина</string>
+    <string name="text_for_date">Дата доставки товаров:</string>
+    <string name="text_for_time">Время доставки товаров:</string>
+    <string name="text_for_address">Адрес доставки товаров:</string>
+    <string name="send">Отправить</string>
+    <string name="login_button">Войти</string>
+    <string name="login">Логин</string>
+    <string name="text_forgot_password">Забыли данные для входа?</string>
+    <string name="text_registrate">Еще нет аккаунта? Зарегистрируйтесь.</string>
+    <string name="login_pd_title">Ошибка</string>
+    <string name="login_pd_message">Не удалось войти из-за проблем с интернет-соединением. Проверьте подключение к сети и повторите попытку.</string>
+    <string name="yes">OK</string>
+    <string name="login_password_error">Пароль не может быть менее 6 символов!</string>
+    <string name="wrong_data">Неизвестная ошибка, повторите попытку</string>
+
+    <!-- Strings related to registrate -->
+    <string name="reg_button">Зарегистрироваться</string>
+    <string name="reg_name">Ваше имя</string>
+    <string name="reg_email">Ваша электронная почта</string>
+    <string name="reg_password">Пароль</string>
+    <string name="reg_agree">Я согласен с условиями пользовательского соглашения</string>
+    <string name="reg_to_login">Уже есть аккаунт? Войдите.</string>
+
+    <!-- Strings related to forgot password -->
+    <string name="forgot_next">Далее</string>
+
+    <!-- Strings related to choose market -->
+    <string name="spinner_title">Выберите супермаркет</string>
+    <string name="map_type_none">None</string>
+    <string name="map_type_normal">Normal</string>
+    <string name="map_type_terrain">Terrain</string>
+    <string name="map_type_satellite">Satellite</string>
+    <string name="map_type_hybrid">Hybrid</string>
+
+    <string name="setting">Настройка</string>
+    <string name="passwordCheck">Пароль не может быть менее 6 символов!</string>
+    <string name="already_exist">Пользователь с таким именем уже существует!</string>
+    <string name="success_intered">Данные приняты!</string>
+    <string name="not_success_intered">Данные не приняты!</string>
+
+    <string name="roboto_light">s</string>
+    <string name="inserted">Принято</string>
+    <string name="merchendaiser">Упаковано</string>
+    <string name="delivery">В пути</string>
+    <string name="delivered">Доставлено</string>
+    <string name="your_order">Ваш заказ</string>
+
+    <string name="history">История заказов</string>
+    <string name="change_market">Сменить супермаркет</string>
+    <string name="barcode">Сканировать товар</string>
+    <string name="change_password">Сменить пароль</string>
+    <string name="signout">Выйти</string>
+</resources>

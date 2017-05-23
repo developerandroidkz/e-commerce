@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/DateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/text_for_date"
+            android:textColor="#000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/Currentdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:layout_alignTop="@+id/DateText"
+            android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/TimeDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/DateText"
+        android:layout_below="@+id/Currentdate"
+        android:layout_marginTop="17dp"
+        android:textColor="#000"
+        android:text="@string/text_for_time" />
+
+    <TextView
+        android:id="@+id/CurrentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Currentdate"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/TimeDelivery"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TimeDelivery"
+        android:layout_below="@+id/CurrentTime"
+        android:text="@string/text_for_address"
+        android:textColor="#000"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/mapFragmentDelivery"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mapFragmentDelivery"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button"
+        android:text="@string/send" />
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="2dp"
+        card_view:contentPadding="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/inserted"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="16dp"
+                card_view:srcCompat="@drawable/liner" />
+
+            <CheckBox
+                android:id="@+id/inserted"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="21dp"
+                android:button="@drawable/history" />
+
+            <CheckBox
+                android:id="@+id/merchaindaiser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="58dp"
+                android:button="@drawable/packaged"
+                android:layout_alignBaseline="@+id/inserted"
+                android:layout_alignBottom="@+id/inserted"
+                android:layout_toEndOf="@+id/inserted" />
+
+            <CheckBox
+                android:id="@+id/courier"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:button="@drawable/delivered"
+                android:layout_alignBaseline="@+id/merchaindaiser"
+                android:layout_alignBottom="@+id/merchaindaiser"
+                android:layout_toStartOf="@+id/delivered"
+                android:layout_marginEnd="57dp" />
+
+            <CheckBox
+                android:id="@+id/delivered"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBaseline="@+id/courier"
+                android:layout_alignBottom="@+id/courier"
+                android:layout_alignParentEnd="true"
+                android:button="@drawable/history" />
+
+            <TextView
+                android:id="@+id/insertedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView2"
+                android:text="@string/inserted" />
+
+            <TextView
+                android:id="@+id/merchendaiserText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="@string/merchendaiser"
+                android:layout_below="@+id/imageView2"
+                android:layout_toEndOf="@+id/insertedText"
+                android:layout_marginStart="41dp" />
+
+            <TextView
+                android:id="@+id/deliveryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="@string/delivery"
+                android:textAlignment="center"
+                android:layout_below="@+id/imageView2"
+                android:layout_alignEnd="@+id/courier"
+                android:layout_alignStart="@+id/courier" />
+
+            <TextView
+                android:id="@+id/deliveredText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="#000"
+                android:layout_below="@+id/imageView2"
+                android:text="@string/delivered" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="#000"
+                android:textAlignment="center"
+                android:text="@string/your_order"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/checkOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/insertedText"
+                android:layout_marginTop="11dp"
+                android:textColor="#000"
+                android:text="TextView"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

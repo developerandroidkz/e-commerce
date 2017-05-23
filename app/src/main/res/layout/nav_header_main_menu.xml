@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/userbackground"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:src="@drawable/user"
+        app:civ_border_color="#91fffefe"
+        app:civ_border_width="2dp" />
+    <TextView
+        android:id="@+id/nameOfUser"
+        android:layout_width="match_parent"
+        android:background="@color/transpertTextView"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="Android Studio"
+
+        android:textColor="@android:color/background_dark" />
+    <TextView
+        android:id="@+id/emailOfUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transpertTextView"
+        android:text="android.studio@android.com"
+        android:textColor="@android:color/background_dark" />
+</LinearLayout>
